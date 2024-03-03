@@ -1,6 +1,5 @@
 package com.amazonproxy.productcatalog.dtos;
 
-import com.amazonproxy.productcatalog.models.Category;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,9 +7,10 @@ import lombok.Setter;
 @Setter
 public class ProductRequestDto {
 
+    private String productId;
     private String title;
     private String description;
     private Double price;
     private String imageUrl;
-    private Category category;
+    private String categoryName;
 }
